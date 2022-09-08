@@ -1,0 +1,23 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.182.135”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.cpp
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\main.cpp(26,1): warning : no return statement in function returning non-void [-Wreturn-type]
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\main.cpp(26,1): warning :  }
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\main.cpp(26,1): warning :  ^
+  TcpServer.cpp
+  TcpSocket.cpp
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\TcpSocket.cpp(75,33): warning : conversion to ‘int’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\TcpSocket.cpp(75,33): warning :    int dataLen = sendData.size() + 4;
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\TcpSocket.cpp(75,33): warning :                  ~~~~~~~~~~~~~~~~^~~
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\TcpSocket.cpp(85,35): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\TcpSocket.cpp(85,35): warning :    int netlen = htonl(sendData.size());
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\TcpSocket.cpp(85,35): warning :                       ~~~~~~~~~~~~~^~
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\TcpSocket.cpp(407,17): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\TcpSocket.cpp(407,17): warning :     return count - nleft;
+F:\project\secureTransportPlatform\SafeTran\code\test2\test2\TcpSocket.cpp(407,17): warning :            ~~~~~~^~~~~~~
+  正在链接对象
+  test2.vcxproj -> F:\project\secureTransportPlatform\SafeTran\code\test2\test2\bin\x64\Debug\test2.out

@@ -1,0 +1,12 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.182.135”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.cpp
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyClient\SecKeyClient\main.cpp(22,7): warning : unused variable ‘recvLen’ [-Wunused-variable]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyClient\SecKeyClient\main.cpp(22,7): warning :    int recvLen = -1;
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyClient\SecKeyClient\main.cpp(22,7): warning :        ^~~~~~~
+  正在链接对象
+  SecKeyClient.vcxproj -> F:\project\secureTransportPlatform\SafeTran\code\SecKeyClient\SecKeyClient\bin\x64\Debug\SecKeyClient.out

@@ -1,0 +1,1 @@
+g++ -o "/home/ttx/projects/SecKeyClient/bin/x64/Debug/SecKeyClient.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/ttx/projects/SecKeyClient/obj/x64/Debug/main.o /home/ttx/projects/SecKeyClient/obj/x64/Debug/TcpSocket.o
