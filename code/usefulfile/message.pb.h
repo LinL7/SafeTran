@@ -176,26 +176,26 @@ class RequestMsg :
 
   // accessors -------------------------------------------------------
 
-  // bytes clientID = 2;
+  // string clientID = 2;
   void clear_clientid();
   static const int kClientIDFieldNumber = 2;
   const std::string& clientid() const;
   void set_clientid(const std::string& value);
   void set_clientid(std::string&& value);
   void set_clientid(const char* value);
-  void set_clientid(const void* value, size_t size);
+  void set_clientid(const char* value, size_t size);
   std::string* mutable_clientid();
   std::string* release_clientid();
   void set_allocated_clientid(std::string* clientid);
 
-  // bytes serverID = 3;
+  // string serverID = 3;
   void clear_serverid();
   static const int kServerIDFieldNumber = 3;
   const std::string& serverid() const;
   void set_serverid(const std::string& value);
   void set_serverid(std::string&& value);
   void set_serverid(const char* value);
-  void set_serverid(const void* value, size_t size);
+  void set_serverid(const char* value, size_t size);
   std::string* mutable_serverid();
   std::string* release_serverid();
   void set_allocated_serverid(std::string* serverid);
@@ -354,26 +354,26 @@ class RespondMsg :
 
   // accessors -------------------------------------------------------
 
-  // bytes clientID = 3;
+  // string clientID = 3;
   void clear_clientid();
   static const int kClientIDFieldNumber = 3;
   const std::string& clientid() const;
   void set_clientid(const std::string& value);
   void set_clientid(std::string&& value);
   void set_clientid(const char* value);
-  void set_clientid(const void* value, size_t size);
+  void set_clientid(const char* value, size_t size);
   std::string* mutable_clientid();
   std::string* release_clientid();
   void set_allocated_clientid(std::string* clientid);
 
-  // bytes serverID = 4;
+  // string serverID = 4;
   void clear_serverid();
   static const int kServerIDFieldNumber = 4;
   const std::string& serverid() const;
   void set_serverid(const std::string& value);
   void set_serverid(std::string&& value);
   void set_serverid(const char* value);
-  void set_serverid(const void* value, size_t size);
+  void set_serverid(const char* value, size_t size);
   std::string* mutable_serverid();
   std::string* release_serverid();
   void set_allocated_serverid(std::string* serverid);
@@ -440,7 +440,7 @@ inline void RequestMsg::set_cmdtype(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:RequestMsg.cmdType)
 }
 
-// bytes clientID = 2;
+// string clientID = 2;
 inline void RequestMsg::clear_clientid() {
   clientid_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -465,7 +465,7 @@ inline void RequestMsg::set_clientid(const char* value) {
   clientid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:RequestMsg.clientID)
 }
-inline void RequestMsg::set_clientid(const void* value, size_t size) {
+inline void RequestMsg::set_clientid(const char* value, size_t size) {
   
   clientid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
@@ -491,7 +491,7 @@ inline void RequestMsg::set_allocated_clientid(std::string* clientid) {
   // @@protoc_insertion_point(field_set_allocated:RequestMsg.clientID)
 }
 
-// bytes serverID = 3;
+// string serverID = 3;
 inline void RequestMsg::clear_serverid() {
   serverid_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -516,7 +516,7 @@ inline void RequestMsg::set_serverid(const char* value) {
   serverid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:RequestMsg.serverID)
 }
-inline void RequestMsg::set_serverid(const void* value, size_t size) {
+inline void RequestMsg::set_serverid(const char* value, size_t size) {
   
   serverid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
@@ -676,7 +676,7 @@ inline void RespondMsg::set_seckeyid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:RespondMsg.seckeyID)
 }
 
-// bytes clientID = 3;
+// string clientID = 3;
 inline void RespondMsg::clear_clientid() {
   clientid_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -701,7 +701,7 @@ inline void RespondMsg::set_clientid(const char* value) {
   clientid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:RespondMsg.clientID)
 }
-inline void RespondMsg::set_clientid(const void* value, size_t size) {
+inline void RespondMsg::set_clientid(const char* value, size_t size) {
   
   clientid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
@@ -727,7 +727,7 @@ inline void RespondMsg::set_allocated_clientid(std::string* clientid) {
   // @@protoc_insertion_point(field_set_allocated:RespondMsg.clientID)
 }
 
-// bytes serverID = 4;
+// string serverID = 4;
 inline void RespondMsg::clear_serverid() {
   serverid_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -752,7 +752,7 @@ inline void RespondMsg::set_serverid(const char* value) {
   serverid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:RespondMsg.serverID)
 }
-inline void RespondMsg::set_serverid(const void* value, size_t size) {
+inline void RespondMsg::set_serverid(const char* value, size_t size) {
   
   serverid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));

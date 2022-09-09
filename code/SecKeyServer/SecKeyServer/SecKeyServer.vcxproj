@@ -74,19 +74,41 @@
   <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\linq\prog\protobuf_64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\linq\prog\protobuf_64\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="Codec.cpp" />
+    <ClCompile Include="CodeFactory.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="message.pb.cc" />
+    <ClCompile Include="RequestCode.cpp" />
+    <ClCompile Include="RequestFactory.cpp" />
+    <ClCompile Include="RespondCode.cpp" />
+    <ClCompile Include="RespondFactory.cpp" />
     <ClCompile Include="TcpServer.cpp" />
     <ClCompile Include="TcpSocket.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Codec.h" />
+    <ClInclude Include="CodeFactory.h" />
+    <ClInclude Include="message.pb.h" />
+    <ClInclude Include="RequestCode.h" />
+    <ClInclude Include="RequestFactory.h" />
+    <ClInclude Include="RespondCode.h" />
+    <ClInclude Include="RespondFactory.h" />
     <ClInclude Include="TcpServer.h" />
     <ClInclude Include="TcpSocket.h" />
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
-      <LibraryDependencies>pthread</LibraryDependencies>
+      <LibraryDependencies>pthread;protobuf</LibraryDependencies>
     </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>PROTOBUF_USE_DLLS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\linq\prog\protobuf_64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

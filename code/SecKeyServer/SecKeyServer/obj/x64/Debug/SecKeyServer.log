@@ -4,6 +4,30 @@
   正在验证体系结构
   正在启动远程生成
   正在编译源:
-  TcpServer.cpp
+  main.cpp
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(59,9): warning : deleting object of polymorphic class type ‘CodeFactory’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(59,9): warning :   delete factory;
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(59,9): warning :          ^~~~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(60,9): warning : deleting object of polymorphic class type ‘Codec’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(60,9): warning :   delete codec;
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(60,9): warning :          ^~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(72,9): warning : deleting object of polymorphic class type ‘CodeFactory’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(72,9): warning :   delete factory;
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(72,9): warning :          ^~~~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(73,9): warning : deleting object of polymorphic class type ‘Codec’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(73,9): warning :   delete codec;
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(73,9): warning :          ^~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(81,9): warning : deleting object of polymorphic class type ‘CodeFactory’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(81,9): warning :   delete factory;
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(81,9): warning :          ^~~~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(82,9): warning : deleting object of polymorphic class type ‘Codec’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(82,9): warning :   delete codec;
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(82,9): warning :          ^~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(93,9): warning : deleting object of polymorphic class type ‘CodeFactory’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(93,9): warning :   delete factory;
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(93,9): warning :          ^~~~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(94,9): warning : deleting object of polymorphic class type ‘Codec’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(94,9): warning :   delete codec;
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(94,9): warning :          ^~~~~
   正在链接对象
   SecKeyServer.vcxproj -> F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\bin\x64\Debug\SecKeyServer.out
