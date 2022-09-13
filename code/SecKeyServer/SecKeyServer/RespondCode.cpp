@@ -18,14 +18,16 @@ RespondCode::RespondCode(RespondInfo* info)
 string RespondCode::encStr()
 {
 	string out;
-	RespondMsg resMsg;
+	RespondMsg* resMsg = new RespondMsg();
 	
-	resMsg.set_status(m_info->status);
-	resMsg.set_seckeyid(m_info->seckeyID);
-	resMsg.set_clientid(m_info->clientID);
-	resMsg.set_serverid(m_info->serverID);
-	resMsg.set_data(m_info->data);
-	resMsg.SerializeToString(&out);
+	resMsg->set_status(m_info->status);
+	resMsg->set_seckeyid(m_info->seckeyID);
+	resMsg->set_clientid(m_info->clientID);
+	resMsg->set_serverid(m_info->serverID);
+	resMsg->set_data(m_info->data);
+	resMsg->SerializeToString(&out);
+
+	delete resMsg;
 
 	return out;
 }
@@ -40,6 +42,8 @@ void* RespondCode::decStr()
 	info->clientID = resMsg->clientid();
 	info->serverID = resMsg->serverid();
 	info->data = resMsg->data();
+
+	delete resMsg;
 
 	return info;
 }

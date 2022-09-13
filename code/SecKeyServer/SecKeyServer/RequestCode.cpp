@@ -31,6 +31,7 @@ string RequestCode::encStr()
 	reqMsg.set_data(m_info->data);
 	reqMsg.SerializeToString(&out);
 
+	delete& reqMsg;
 	return out;
 }
 
@@ -42,11 +43,11 @@ void* RequestCode::decStr()
 	reqMsg->ParseFromString(m_enstr);
 	info->sign = reqMsg->sign();
 	info->cmdType = reqMsg->cmdtype();
-	
 	info->clientID = reqMsg->clientid();
 	info->serverID = reqMsg->serverid();
-	
 	info->data = reqMsg->data();
+
+	delete reqMsg;
 
 	return info;
 }

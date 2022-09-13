@@ -4,30 +4,40 @@
   正在验证体系结构
   正在启动远程生成
   正在编译源:
-  main.cpp
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(59,9): warning : deleting object of polymorphic class type ‘CodeFactory’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(59,9): warning :   delete factory;
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(59,9): warning :          ^~~~~~~
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(60,9): warning : deleting object of polymorphic class type ‘Codec’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(60,9): warning :   delete codec;
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(60,9): warning :          ^~~~~
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(72,9): warning : deleting object of polymorphic class type ‘CodeFactory’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(72,9): warning :   delete factory;
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(72,9): warning :          ^~~~~~~
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(73,9): warning : deleting object of polymorphic class type ‘Codec’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(73,9): warning :   delete codec;
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(73,9): warning :          ^~~~~
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(81,9): warning : deleting object of polymorphic class type ‘CodeFactory’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(81,9): warning :   delete factory;
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(81,9): warning :          ^~~~~~~
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(82,9): warning : deleting object of polymorphic class type ‘Codec’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(82,9): warning :   delete codec;
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(82,9): warning :          ^~~~~
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(93,9): warning : deleting object of polymorphic class type ‘CodeFactory’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(93,9): warning :   delete factory;
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(93,9): warning :          ^~~~~~~
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(94,9): warning : deleting object of polymorphic class type ‘Codec’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(94,9): warning :   delete codec;
-F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\main.cpp(94,9): warning :          ^~~~~
+  SecKeyShm.cpp
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.h(3,18): warning : extra tokens at end of #include directive
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.h(3,18): warning :  #include "string";
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.h(3,18): warning :                   ^
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.h(19,7): warning : ‘ShmNodeInfo::status’ will be initialized after [-Wreorder]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.h(19,7): warning :   bool status;   //��ǰ��Կ�Ƿ����
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.h(19,7): warning :        ^~~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.h(18,6): warning : ‘int ShmNodeInfo::number’ [-Wreorder]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.h(18,6): warning :   int number;    //�����ڴ���
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.h(18,6): warning :       ^~~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.h(11,2): warning : when initialized here [-Wreorder]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(7,65): warning : conversion to ‘int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(19,85): warning : conversion to ‘int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(49,29): warning : argument to ‘sizeof’ in ‘void* memcpy(void*, const void*, size_t)’ call is the same pointer type ‘ShmNodeInfo*’ as the destination; expected ‘ShmNodeInfo’ or an explicit length [-Wsizeof-pointer-memaccess]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(49,29): warning :     memcpy(tmp2, info, sizeof(info));
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(49,29): warning :                              ^
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(63,38): warning : argument to ‘sizeof’ in ‘void* memcpy(void*, const void*, size_t)’ call is the same pointer type ‘ShmNodeInfo*’ as the destination; expected ‘ShmNodeInfo’ or an explicit length [-Wsizeof-pointer-memaccess]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(63,38): warning :     memcpy(startAddr + i, info, sizeof(info));
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(63,38): warning :                                       ^
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(61,39): warning : value computed is not used [-Wunused-value]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(61,39): warning :     cout << "д���½ڵ� " << i << endl;+
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(61,39): warning :                                        ^~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(61,39): warning :     //������memcpy()����string
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(61,39): warning :     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(61,39): warning :     memcpy(startAddr + i, info, sizeof(info));
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(61,39): warning :     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(81,10): warning : statement has no effect [-Wunused-value]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(81,10): warning :     strcmp(ret->clientID,(startAddr + i)->clientID);
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(81,10): warning :     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(82,10): warning : statement has no effect [-Wunused-value]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(82,10): warning :     strcmp(ret->serverID, (startAddr + i)->serverID);
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(82,10): warning :     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(85,10): warning : statement has no effect [-Wunused-value]
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(85,10): warning :     strcmp(ret->data, (startAddr + i)->data);
+F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\SecKeyShm.cpp(85,10): warning :     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   正在链接对象
   SecKeyServer.vcxproj -> F:\project\secureTransportPlatform\SafeTran\code\SecKeyServer\SecKeyServer\bin\x64\Debug\SecKeyServer.out

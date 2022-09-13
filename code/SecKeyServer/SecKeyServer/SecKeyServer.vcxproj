@@ -79,6 +79,7 @@
     <LibraryPath>D:\linq\prog\protobuf_64\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="BaseShm.cpp" />
     <ClCompile Include="Codec.cpp" />
     <ClCompile Include="CodeFactory.cpp" />
     <ClCompile Include="main.cpp" />
@@ -87,10 +88,12 @@
     <ClCompile Include="RequestFactory.cpp" />
     <ClCompile Include="RespondCode.cpp" />
     <ClCompile Include="RespondFactory.cpp" />
+    <ClCompile Include="SecKeyShm.cpp" />
     <ClCompile Include="TcpServer.cpp" />
     <ClCompile Include="TcpSocket.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseShm.h" />
     <ClInclude Include="Codec.h" />
     <ClInclude Include="CodeFactory.h" />
     <ClInclude Include="message.pb.h" />
@@ -98,6 +101,7 @@
     <ClInclude Include="RequestFactory.h" />
     <ClInclude Include="RespondCode.h" />
     <ClInclude Include="RespondFactory.h" />
+    <ClInclude Include="SecKeyShm.h" />
     <ClInclude Include="TcpServer.h" />
     <ClInclude Include="TcpSocket.h" />
   </ItemGroup>
